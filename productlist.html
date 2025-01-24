@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producten</title>
+  <script defer src="productlist.js"></script>
+  <link rel="stylesheet" href="productlist.css">
+</head>
+<body>
+<header>
+  <h1>SHOESONTHEWAY</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="productlist.html">Producten</a></li>
+      <li><a href="cart.html">Winkelwagen</a></li>
+      <li><a href="order-overview.html">Overzicht</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h2>Producten</h2>
+  <div id="filters">
+    <label for="filter-name">Naam:</label>
+    <input type="text" id="filter-name" placeholder="Zoek op naam...">
+
+    <label for="filter-price">Max prijs:</label>
+    <input type="number" id="filter-price" placeholder="Max prijs">
+
+    <label for="filter-stock">Min voorraad:</label>
+    <input type="number" id="filter-stock" placeholder="Min voorraad">
+
+    <label for="filter-color">Kleur:</label>
+    <select id="filter-color">
+      <option value="">Alle kleuren</option>
+      <option value="Blauw">Blauw</option>
+      <option value="Groen">Groen</option>
+      <option value="Geel">Geel</option>
+      <option value="Wit">Wit</option>
+      <option value="Zwart">Zwart</option>
+      <option value="Grijs">Grijs</option>
+      <option value="Beige">Beige</option>
+    </select>
+
+    <label for="filter-category">Categorie:</label>
+    <select id="filter-category">
+      <option value="">Alle categorieën</option>
+      <option value="Sportschoenen">Sportschoenen</option>
+      <option value="Casual">Casual</option>
+      <option value="Hardloopschoenen">Hardloopschoenen</option>
+      <option value="Retro">Retro</option>
+    </select>
+
+    <label for="sort-options">Sorteren op:</label>
+    <select id="sort-options">
+      <option value="">Geen</option>
+      <option value="price-asc">Prijs (Laag - Hoog)</option>
+      <option value="price-desc">Prijs (Hoog - Laag)</option>
+      <option value="stock-asc">Voorraad (Laag - Hoog)</option>
+      <option value="stock-desc">Voorraad (Hoog - Laag)</option>
+    </select>
+
+    <button id="apply-filters">Filter toepassen</button>
+    <button id="clear-filters">Reset</button>
+  </div>
+  <div id="products" class="product-container"></div>
+  <div id="pagination" class="pagination-container"></div>
+</main>
+<footer>
+  <p>&copy; 2024 SHOESONTHEWAY. Alle rechten voorbehouden.</p>
+</footer>
+</body>
+</html>

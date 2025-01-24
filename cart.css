@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #4A4A4A;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+header nav ul li a:hover {
+    color: black;
+}
+main {
+    padding: 20px;
+    background-color: white;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+#cart-items {
+    margin-top: 20px;
+}
+.cart-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-item h4 {
+    margin: 0;
+    font-size: 1.2em;
+}
+.cart-item p {
+    margin: 5px 0;
+}
+.cart-item input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    font-size: 1em;
+    margin-right: 10px;
+    text-align: center;
+}
+.cart-item input[type="number"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.cart-item-details {
+    margin-bottom: 10px;
+}
+.cart-item-actions {
+    text-align: center;
+}
+.cart-item .remove-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+.cart-item .remove-btn:hover {
+    background-color: #e60000;
+}
+.cart-item button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+.cart-item button:hover {
+    background-color: #45a049;
+}
+.cart-total {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+button:hover {
+    background-color: #45a049;
+}
+footer {
+    text-align: center;
+    background-color: #4A4A4A;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+    .cart-item {
+        font-size: 1em;
+    }
+    button {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+    header nav ul {
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 767px) {
+    #products {
+        grid-template-columns: 1fr;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .product-small, .cart-item {
+        font-size: 0.8em;
+    }
+    button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+    footer {
+        font-size: 0.9em;
+    }
+    #contact-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 480px) {
+    header nav ul li a {
+        font-size: 1em;
+    }
+    .product-small img {
+        width: 100%;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    button {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+    #contact-form input, #contact-form textarea {
+        padding: 12px;
+    }
+    footer {
+        font-size: 0.8em;
+    }
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-weight: bold;
+}

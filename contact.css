@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4A4A4A;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: black;
+    transition: color 0.3s;
+}
+
+main {
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#contact-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#contact-form button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#contact-form button:hover {
+    background-color: #45a049;
+}
+
+#contact-form button:active {
+    background-color: #3e8e41;
+}
+
+@media screen and (min-width: 768px) {
+    button {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 1.2em;
+    }
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+
+    #contact-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header nav ul li a {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+
+    #contact-form input, #contact-form textarea {
+        padding: 12px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}

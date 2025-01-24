@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script defer src="contact.js"></script>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<header>
+    <h1>SHOESONTHEWAY</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productlist.html">Producten</a></li>
+            <li><a href="cart.html">Winkelwagen</a></li>
+            <li><a href="order-overview.html">Overzicht</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h3>Vul onderstaande form in en we contacteren je zo snel mogelijk.</h3>
+    <section id="contact-form" class="container">
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Naam</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Onderwerp</label>
+                <input type="text" id="subject" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Bericht</label>
+                <textarea id="message" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Verstuur</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Mijn SHOESONTHEWAY. Alle rechten voorbehouden.</p>
+</footer>
+
+</body>
+</html>
